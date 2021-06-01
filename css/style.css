@@ -28,11 +28,14 @@
 
 }
 
+@media screen and (max-width:2400px){
+    
     .max-width{
         max-width: 1300px;
         padding: 0 80px;
         margin: auto;
     }
+ 
     header{
 
         position: fixed;
@@ -182,7 +185,7 @@
     }
     main{
 
-        background: url('/images/office-865091_1920.jpg');
+        background-image: url("/images/office-865091_1920.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -494,7 +497,7 @@
     footer span a:hover{
         text-decoration: underline;
     }
-
+}
     @media screen and (max-width:1000px){
 
         .experience{

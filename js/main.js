@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 
+    console.log($("#start").css('loading','eager'));
 
      $(window).resize(function(){
         if ($(window).width() > 768){ 
