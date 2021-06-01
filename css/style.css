@@ -1,0 +1,611 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../fonts/Poppins-Light.ttf');
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family:  'Poppins',sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+    .max-width{
+        max-width: 1300px;
+        padding: 0 80px;
+        margin: auto;
+    }
+    header{
+
+        position: fixed;
+        transition: all 0.5s linear;
+        width: 100%;
+        padding: 2rem 0;
+        z-index: 10000;
+
+    }
+
+    header .menu{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-active{
+
+        background-color: #e84545;
+        padding: 1.25rem 0;
+
+    }
+    header .menu .logo{
+
+        margin-left: 3rem;
+    }
+    header .menu .logo a{
+
+        font-family: 'Poppins-Bold',sans-serif;
+        color: #e84545;
+        font-size: 20px;
+    }
+    header .menu ul{
+
+        list-style: none;
+        padding: 0 5rem 0 0;
+    }
+    header .menu ul li{
+
+        display: inline-block;
+    }
+    header .menu ul li a{
+
+        color: white;
+        margin-left: 2rem;
+        
+    }
+    header .menu ul li a:hover{
+
+        color: #e84545;
+    }
+
+    .hamburger{
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        width: max-content;
+        display: none;
+    
+    
+    }
+    .hamburger .line-burger{
+        background-color: white;
+        height: 2px;
+        width: 22px;
+        border-radius: 10px;
+        
+    }
+    .line-burger::before,.line-burger::after{
+    
+        content: '';
+        position: absolute;
+        background-color: white;
+        height: 2px;
+        width: 22px;
+        border-radius: 10px;
+
+        
+    }
+    .line-burger::before{
+    
+        margin-top: -6px;
+    
+    }
+    .line-burger::after{
+    
+        margin-top: 6px;
+    
+    }
+    
+    .cross{
+    
+        display: flex;
+        width: max-content;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        display: none;   
+        padding: 0 2rem;
+
+    
+      }
+      .diagonal{
+    
+          background-color: transparent;
+          height: 3px;
+          width: 24px;
+      }
+      .diagonal::before, .diagonal::after{
+      
+          content: '';
+          position: absolute;
+          background-color: white;
+          height: 3px;
+          width: 18px;
+      
+      }  
+       .diagonal::before{
+    
+          transform: rotate(45deg) translate(5px,-5px);
+    
+      }
+       .diagonal::after{
+    
+          transform: rotate(-45deg) translate(5px,5px);
+    
+      }
+    /* styling the main banner */
+    .banner .name span{
+
+        color: #e84545;
+        font-family: 'Poppins-Medium';
+
+    }
+    .banner p{
+
+        font-size: 28px;
+
+    }
+    .typing{
+
+        color: #e84545;
+        font-size: 32px;
+        font-family: 'Poppins-Medium';
+    }
+    main{
+
+        background: url('/images/office-865091_1920.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    main .banner{
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 0 0 4rem;
+        color: white;
+    }
+    main .banner a{
+
+        display: inline-block;
+        background-color: #e84545;
+        border: 1px solid #e84545;
+        border-radius: 5px;
+        padding: 0.6rem 2rem;
+        margin: 1rem 0;
+        color: white;
+        font-size: 18px;
+    }
+
+    main .banner a:hover{
+
+
+        background-color: transparent;
+        color: #e84545;
+    }
+
+  
+
+
+    /* skills section styling */
+
+    section .title{
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: 'Poppins-Bold', sans-serif;
+    }
+    section .title::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    section .title::after{
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        font-size: 20px;
+        color: #e84545;
+        padding: 0 5px;
+        background: #fff;
+        transform: translateX(-50%);
+    }
+    .skills{
+
+        padding: 4rem 0;
+    }
+    .skills .skills-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .skills .title::after{
+        content: "what i know";
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .skills .skills-content .column{
+        width: calc(50% - 30px);
+    }
+    .skills .skills-content .left .text{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .skills .skills-content .left p{
+        text-align: justify;
+    }
+    .skills .skills-content .left a{
+        display: inline-block;
+        background: #e84545;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 16px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 2px solid #e84545;
+        transition: all 0.3s ease;
+    }
+    .skills .skills-content .left a:hover{
+        color: #e84545;
+        background: none;
+    }
+    .skills .skills-content .right .bars{
+        margin-bottom: 15px;
+    }
+    .skills .skills-content .right .info{
+        display: flex;
+        margin-bottom: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skills .skills-content .right span{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .skills .skills-content .right .line{
+        height: 5px;
+        width: 100%;
+        background: lightgrey;
+        position: relative;
+    }
+    .skills .skills-content .right .line::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #e84545;
+    }
+    .skills-content .right .html::before{
+        width: 80%;
+    }
+    .skills-content .right .css::before{
+        width: 70%;
+    }
+    .skills-content .right .js::before{
+        width: 80%;
+    }
+    .skills-content .right .jquery::before{
+        width: 80%;
+    }   
+    .skills-content .right .react::before{
+        width: 60%;
+    }
+    .skills-content .right .php::before{
+        width: 70%;
+    }
+    .skills-content .right .mysql::before{
+        width: 70%;
+    }
+
+    /* .experience styling */
+    .experience{
+
+        width: 90%;
+        padding: 4rem 0;
+        margin: auto;
+
+    }
+    .experience .title::after{
+        content: "what i did";
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .experience .slider{
+
+        width: 90%;
+        margin: auto;
+
+    }
+    .experience .slider .slide img{
+    
+        width: 100%;
+        margin:auto;
+        display: block;
+        object-fit: cover;
+    
+    }
+    .slick-next{
+
+        right: 10px;
+        opacity: 0.7;
+    }
+    .slick-prev{
+
+        left: 10px;
+        opacity: 0.7;
+        z-index: 100;
+    }
+
+    .scroll-up{
+
+        background-color: #e84545;
+        color: white;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border: none;
+        border-radius: 3px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s linear;
+
+    }
+    .scroll-up:hover{
+
+        background-color: #362424;
+    }
+    .scroll-active{
+
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* about section styling */
+    .about{
+
+        padding: 4rem 0;
+    }
+    .about .about-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about .title::after{
+        content: "who i am";
+    }
+    .about .about-content .left{
+        width: 45%;
+    }
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .about .about-content .right{
+        width: 55%;
+    }
+    .about .about-content .right .text{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .about .about-content .right .text span{
+        color: crimson;
+    }
+    .about .about-content .right p{
+        text-align: justify;
+    }
+    /* .about .about-content .right a{
+        display: inline-block;
+        background: crimson;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 30px;
+        margin-top: 20px;
+        border-radius: 6px;
+        border: 2px solid crimson;
+        transition: all 0.3s ease;
+    }
+    .about .about-content .right a:hover{
+        color: crimson;
+        background: none;
+    } */
+
+    .social .phone{
+
+        display: flex;
+        column-gap: 10px;
+        padding: 1rem 0;
+        align-items: center;
+    }
+    .social img{
+
+        width: 24px;
+        height: 24px;
+
+    }
+
+    .about .social a{
+
+    }
+
+
+
+        /* footer section styling */
+    footer{
+        background: #111;
+        padding: 15px 23px;
+        color: #fff;
+        text-align: center;
+    }
+    footer span a{
+        color: #e84545;
+        text-decoration: none;
+    }
+    footer span a:hover{
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width:1000px){
+
+        .experience{
+
+            width: 90%;
+        }
+        .experience .slider{
+
+            width: 90%;
+    
+        }
+        .experience .slider .slide img{
+
+            width: 100%;
+        }
+        .about .about-content .column{
+            width: 100%;
+        }
+        .about .about-content .left{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 60px;
+        }
+        .about .about-content .right{
+            flex: 100%;
+        }
+        
+    }
+    @media screen and (max-width:768px){
+    
+        .hamburger{
+
+            display: flex;
+            margin-left: auto;
+            padding: 0 2rem;
+            transition: all ease-in-out 0.8s;
+
+        }
+        .cross{
+
+            display: flex;
+            margin-left: auto;
+            padding: 3rem 2rem;
+            z-index: 3000;
+        }
+        header{
+
+            padding: 1.5rem;
+        }
+        header .menu ul{
+
+           position: absolute;
+           display: flex;
+           flex-flow: column nowrap;
+           width: 100%;
+           height: 100vh;
+           top: 0;
+           left: 0;
+           z-index: 3000;
+           background-color: black;
+           transform: translateX(-100%);
+           padding: 0;
+
+        }
+        .header-active{
+            padding: 1rem;
+        }
+        header .menu ul li{
+
+            margin: 1rem auto;
+        }
+        .show-nav{
+
+            transition: all ease-in-out 0.8s;
+
+        }
+        .skills{
+
+            padding: 2rem 0;
+        }
+        .skills .max-width{
+
+            padding: 2rem;
+
+        }
+        section .title{
+
+            margin-bottom: 40px;
+        }
+        .skills-content{
+
+            flex-flow: column;
+        }
+        
+        .skills .skills-content .column {
+
+            width: calc(100% - 30px);
+            padding: 1rem 0;
+        }
+
+        .experience{
+
+            width: 100%;
+        }
+        .experience .slider{
+
+            width: 90%;
+    
+        }
+        .experience .slider .slide img{
+
+            width: 100%;
+        }
+    }
