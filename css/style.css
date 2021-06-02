@@ -30,7 +30,7 @@
 
  
     .max-width{
-        max-width: 1300px;
+        max-width: 1600px;
         padding: 0 80px;
         margin: auto;
     }
@@ -250,6 +250,7 @@
         padding: 0 5px;
         background: #fff;
         transform: translateX(-50%);
+        font-family: 'Poppins',sans-serif;
     }
     .skills{
 
@@ -284,15 +285,15 @@
         color: #fff;
         font-size: 18px;
         font-weight: 500;
-        padding: 8px 16px;
-        margin-top: 20px;
+        padding: 0.6rem 2rem;
+        margin: 1rem 0;
         border-radius: 5px;
-        border: 2px solid #e84545;
+        border: 1px solid #e84545;
         transition: all 0.3s ease;
     }
     .skills .skills-content .left a:hover{
         color: #e84545;
-        background: none;
+        background: transparent;
     }
     .skills .skills-content .right .bars{
         margin-bottom: 15px;
@@ -577,9 +578,9 @@
 
             padding: 2rem 0;
         }
-        .skills .max-width{
+        .max-width{
 
-            padding: 2rem;
+            padding: 0 2rem;
 
         }
         section .title{
@@ -603,11 +604,60 @@
         }
         .experience .slider{
 
-            width: 90%;
+            width: 100%;
     
         }
         .experience .slider .slide img{
 
             width: 100%;
+        }
+
+
+    }
+
+    @media screen and (max-width:425px){
+        
+        header{
+
+            padding: 1rem 0;
+        }
+        header .menu .logo{
+
+            margin-left: 1rem;
+        }
+        .hamburger{
+
+            padding: 1rem;
+        }
+        .max-width {
+        
+            padding: 0 30px;
+        
+        }
+        .about .about-content .left img {
+            width: 250px;
+            height: 250px;
+        }
+
+        main .banner{
+
+            padding: 0 0 0 2rem;
+        }
+        main .banner a{
+    
+            font-size: 16px;
+        }
+        .banner p{
+
+            font-size: 22px;
+        }
+        .typing{
+
+            font-size: 26px;
+        }
+
+        .skills .skills-content .left a{
+
+            font-size: 16px;
         }
     }
