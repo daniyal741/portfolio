@@ -357,6 +357,48 @@
         font-family: 'Poppins', sans-serif;
 
     }
+
+    /* ?/////////////////////////////////// */
+
+    .flex-container{
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .flex-container .flex{
+
+        width: 45%;
+        padding: 2rem 0;
+
+    }
+    .flex .date{
+
+        font-size: 20px;
+        color: grey;
+        padding: 0 0 0.5rem 0;
+        border-bottom: 1px solid grey;
+        max-width: max-content
+    }
+    .flex .exp-title{
+    
+        padding: 0.25rem 0;
+    
+    }
+    .flex span{
+
+        color: gray;
+
+    }
+    .flex p{
+    
+        text-align: justify;
+    
+    }
+
+    /* /////////////////////////////////// */
     .experience .slider{
 
         width: 90%;
@@ -463,6 +505,20 @@
         background: none;
     } */
 
+    .about .flex{
+
+        padding: 1.5rem 0;
+    }
+    .about .flex span{
+
+        padding: 0.5rem 0;
+        display: inline-block;
+    }
+
+    .about .flex p{
+    
+        text-align: justify;
+    }
     .social .phone{
 
         display: flex;
@@ -610,6 +666,37 @@
         .experience .slider .slide img{
 
             width: 100%;
+        }
+
+        .flex-container{
+
+            flex-flow: row wrap;
+    
+        }
+        .flex-container .flex{
+    
+            width: 85%;
+            margin: auto;
+            padding: 1rem 0;
+    
+        }
+        .flex .date{
+    
+            font-size: 20px;
+            color: grey;
+            padding: 0 0 0.5rem 0;
+            border-bottom: 1px solid grey;
+            max-width: max-content
+        }
+        .flex .exp-title{
+        
+            padding: 0.25rem 0;
+        
+        }
+        .flex span{
+    
+            color: gray;
+    
         }
 
 

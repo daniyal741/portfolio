@@ -19,7 +19,9 @@ $(document).ready(function(){
             $('.hamburger').css('display','flex');
             $('#cross').css('display', 'flex');
             $(".menu ul").css('transform', 'translateX(-100%)');
-
+            $('.show-nav li a').on('click', function(){
+                console.log("asdsad");
+            });
         }
 
         $(window).resize(function(){
